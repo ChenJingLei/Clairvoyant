@@ -8,7 +8,6 @@ namespace ClairvoyantAPI.Models
     public class Suspect : Person
     {
         public string Crime { set; get; }
-
         public string Experience { get; set; }
     }
 }

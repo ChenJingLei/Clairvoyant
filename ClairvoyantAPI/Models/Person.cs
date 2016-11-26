@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.Drawing;
 using System.Linq;
 using System.Web;
 
@@ -7,13 +9,9 @@ namespace ClairvoyantAPI.Models
 {
     public class Person
     {
-        public string ID
-        {
-            get;
 
-            set;
-        }
-
+        [Key]
+        public string ID { get; set; }
         public string Name
         {
             get;
@@ -54,5 +52,7 @@ namespace ClairvoyantAPI.Models
         {
             get; set;
         }
+        
+        public byte[] img { get; set;}
     }
 }
